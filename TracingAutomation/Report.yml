@@ -1,0 +1,14 @@
+LabelValuesNotComing: []
+OpearationLabelValueStatus: 'Validation Pass : Value is Coming for Tracing Operation
+  Label Attribute'
+QueryFilter_FunctionalityList: []
+ServiceLabelValueStatus: 'Validation Pass : Value is Coming for Tracing Service Label
+  Attribute'
+TracesComingStatus: 'Validation Pass : Traces are Coming'
+TracingOperationDataStatus: 'Validation Pass : Traces for Operation Name /vets.html
+  are Coming'
+TracingOperationStatus: 'Validation Pass : Tracing Operation /vets.html is Coming'
+TracingServiceDataStatus: 'Validation Pass : Traces for Service Name PetClinicSampleApp
+  are Coming'
+TracingServiceNameStatus: 'Validation Pass : Tracing Service PetClinicSampleApp is
+  Coming'

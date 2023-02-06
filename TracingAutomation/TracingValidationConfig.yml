@@ -1,0 +1,8 @@
+client_id: 2f171d47-28c1-44b4-9a4b-026b1dd81664
+client_key: ARUqgEmjnEASHkmgHabrmKgMPUKxHjzF
+client_secret: EZMxScWpzydaaZfrRf6BxmGPqJs3taU4Nn3ERRrMkWPXH3gTVXJvKqmVarx5kWYG
+TracingService: PetClinicSampleApp
+TracingOperation: /vets.html
+portal_url: uat.opsramp.net
+GOOGLECHAT_WEBHOOK_URL: https://chat.googleapis.com/v1/spaces/AAAASY0N78I/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=L34fEsEil_k1Y7cIjBvVfcCNfvDD3VUXS1aU0KCdf9g%3D
+Portal_Name: UAT
