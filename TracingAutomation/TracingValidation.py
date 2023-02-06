@@ -17,6 +17,7 @@ import TestCases.TracingQueryFiltersValidation
 import SendReporttoGoogleChat
 
 workdirectory = os.getcwd()
+print(workdirectory)
 
 configfile = open(workdirectory + "/TracingValidationConfig.yml")
 parsedconfigfile = yaml.load(configfile, Loader=yaml.FullLoader)
