@@ -28,7 +28,7 @@ clientkey = parsedconfigfile["client_key"]
 clientsecret = parsedconfigfile["client_secret"]
 tracingoperation = parsedconfigfile["TracingOperation"]
 tracingservice = parsedconfigfile["TracingService"]
-googlechat_webhook_url = parsedconfigfile["GOOGLECHAT_WEBHOOK_URL"]
+traces_googlechat_webhook_url = parsedconfigfile["TRACES_GOOGLECHAT_WEBHOOK_URL"]
 portal_name = parsedconfigfile['Portal_Name']
 
 currentdate = datetime.date.today().strftime("%d %b %Y")
@@ -95,7 +95,7 @@ tracingoperationstatus = parsedreportfile['TracingOperationStatus']
 tracingoperationdatastatus = parsedreportfile['TracingOperationDataStatus']
 queryfilter_functionalitylist = parsedreportfile['QueryFilter_FunctionalityList']
 
-GOOGLECHAT_WEBHOOK_URL = googlechat_webhook_url
+GOOGLECHAT_WEBHOOK_URL = traces_googlechat_webhook_url
 
 SendReporttoGoogleChat.send_googlechat_message(GOOGLECHAT_WEBHOOK_URL, portal_name, currentdate, TESTCASE1, TESTCASE2, TESTCASE3,
                                                TESTCASE4, TESTCASE5, TESTCASE6, TESTCASE7, TESTCASE8, TESTCASE9, tracescomingstatus, labelvaluesnotcoming , servicelabelvaluestatus, opearationlabelvaluestatus, tracingservicenamestatus, tracingservicedatastatus, tracingoperationstatus, tracingoperationdatastatus, queryfilter_functionalitylist)
