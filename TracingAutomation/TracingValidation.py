@@ -6,7 +6,7 @@ import calendar
 import datetime
 import GetAuthToken
 import TestCases.TraceComingValidation
-import TestCases.Labelvalues
+import TracingAutomation.TestCases.TracesLabelvalues
 import TestCases.ServiceLabelValueValidation
 import TestCases.OperationLabelValueValidation
 import TestCases.ServiceValidation
@@ -17,7 +17,6 @@ import TestCases.TracingQueryFiltersValidation
 import SendReporttoGoogleChat
 
 workdirectory = os.getcwd()
-print(workdirectory)
 
 configfile = open(workdirectory + "/TracingValidationConfig.yml")
 parsedconfigfile = yaml.load(configfile, Loader=yaml.FullLoader)
@@ -50,7 +49,7 @@ TestCases.TraceComingValidation.TracingData(
     workdirectory, AuthToken, tenantid, portal, starttimenanosec, endtimenanosec, parsedreportfile)
 
 TESTCASE2 = "\n\nTESTCASE-2 : CHECK ALL LABELS-VALUES COMING OR NOT\n"
-TestCases.Labelvalues.LabelValues(workdirectory, AuthToken, tenantid, portal,
+TracingAutomation.TestCases.TracesLabelvalues(workdirectory, AuthToken, tenantid, portal,
                                   starttimemilisec, endtimemilisec, parsedreportfile)
 
 TESTCASE3 = "\n\nTEST CASE-3 : VALIDATION OF SERVICE LABEL ATTRIBUTE VALUE COMING OR NOT \n\n"

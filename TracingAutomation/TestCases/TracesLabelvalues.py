@@ -8,7 +8,7 @@ import json
 def LabelValues(workdirectory, AuthToken, tenantid, portal,
                 starttimemilisec, endtimemilisec, parsedreportfile):
 
-    LabelValuesNotComing = parsedreportfile['LabelValuesNotComing']
+    Traces_LabelValuesNotComing = parsedreportfile['Traces_LabelValuesNotComing']
 
     headers = {
         'Authorization': AuthToken,
@@ -50,13 +50,13 @@ def LabelValues(workdirectory, AuthToken, tenantid, portal,
                 valuesdata = valuesresponsejson['values']
                 if valuesdata == "":
                     status = "Value Not Coming for " + i + " Label Attribute"
-                    LabelValuesNotComing.append(status)
+                    Traces_LabelValuesNotComing.append(status)
                 else:
                     status = "Value is Coming for " + i + " Label Attribute"
-                    LabelValuesNotComing.append(status)
+                    Traces_LabelValuesNotComing.append(status)
             else:
                 status = value_response.reason
-                LabelValuesNotComing.append(status)
+                Traces_LabelValuesNotComing.append(status)
 
     with open(workdirectory + "/Report.yml", "w") as file:
         yaml.dump(parsedreportfile, file)

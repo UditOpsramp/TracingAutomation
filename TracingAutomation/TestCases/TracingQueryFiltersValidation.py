@@ -8,7 +8,7 @@ import json
 def TracingQueryFilters(workdirectory, AuthToken, tenantid, portal,
                         starttimemilisec, endtimemilisec, starttimenanosec, endtimenanosec, parsedreportfile):
 
-    QueryFilter_FunctionalityList = parsedreportfile['QueryFilter_FunctionalityList']
+    Traces_QueryFilter_FunctionalityList = parsedreportfile['Traces_QueryFilter_FunctionalityList']
 
     headers = {
         'Authorization': AuthToken,
@@ -77,19 +77,19 @@ def TracingQueryFilters(workdirectory, AuthToken, tenantid, portal,
                 if not tracesresultStatus:
                     status = "QueryFilter : " + i + \
                         " : Validation Fail - Traces are coming for that Queryfilter\n"
-                    QueryFilter_FunctionalityList.append(status)
+                    Traces_QueryFilter_FunctionalityList.append(status)
                 else:
                     status = "QueryFilter : " + i + \
                         " : Validation Pass - Traces are coming for that Queryfilter\n"
-                    QueryFilter_FunctionalityList.append(status)
+                    Traces_QueryFilter_FunctionalityList.append(status)
 
             else:
                 status = value_response.reason
-                QueryFilter_FunctionalityList.append(status)
+                Traces_QueryFilter_FunctionalityList.append(status)
 
     else:
         status = labels_response.reason
-        QueryFilter_FunctionalityList.append(status)
+        Traces_QueryFilter_FunctionalityList.append(status)
 
     with open(workdirectory + "/Report.yml", "w") as file:
         yaml.dump(parsedreportfile, file)

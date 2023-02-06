@@ -1,7 +1,7 @@
-LabelValuesNotComing: []
+Traces_LabelValuesNotComing: []
 OpearationLabelValueStatus: 'Validation Pass : Value is Coming for Tracing Operation
   Label Attribute'
-QueryFilter_FunctionalityList: []
+Traces_QueryFilter_FunctionalityList: []
 ServiceLabelValueStatus: 'Validation Pass : Value is Coming for Tracing Service Label
   Attribute'
 TracesComingStatus: 'Validation Pass : Traces are Coming'
